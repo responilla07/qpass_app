@@ -14,14 +14,3 @@ Future<dynamic> getData({String controlNumber}) async{
 
   return data;
 }
-
-// Future<dynamic> getData(String text) async{
-//   var url = 'https://37kf5zeww9.execute-api.ap-east-1.amazonaws.com/teststage/item/search';
-//   Map<String, String> headers = {"Content-type": "application/json"};
-//   http.Response response = await http.post(url, headers: headers, body: jsonEncode({
-//     "text" : text
-//   }));
-//   var data = jsonDecode(response.body);
-
-//   return data["Items"][0] ?? [];
-// }

@@ -15,6 +15,7 @@ class PassHolder {
   String encoder;
 
   PassHolder (Map<dynamic, dynamic> passholder) {
+<<<<<<< HEAD
     this.primaryFirstName = passholder["primary_firstname"] ?? 'N/A';
     this.primaryMiddleName = passholder["primary_middlename"] ?? '';
     this.primaryLastName = passholder["primary_lastname"] ?? 'N/A';
@@ -29,6 +30,22 @@ class PassHolder {
     this.street = passholder["street"] ?? 'N/A';
 
     this.encoder = passholder["encoder"] ?? 'N/A';
+=======
+    this.primaryFirstName = passholder["primary_firstname"].trim() ?? 'N/A';
+    this.primaryMiddleName = passholder["primary_middlename"].trim() ?? 'N/A';
+    this.primaryLastName = passholder["primary_lastname"].trim() ?? 'N/A';
+
+    this.secondaryFirstName = passholder["secondary_firstname"].trim() ?? 'N/A';
+    this.secondaryMiddleName = passholder["secondary_middlename"].trim() ?? 'N/A';
+    this.secondaryLastName = passholder["secondary_lastname"].trim() ?? 'N/A';
+
+    this.controlNumber = passholder["control_number"].trim() ?? 'N/A';
+    this.contactNumber = passholder["contact_number"].trim()  ?? 'N/A';
+    this.barangay = Barangay(passholder["barangay"]) ?? Map<dynamic, dynamic>();
+    this.street = passholder["street"] ?? 'N/A';
+
+    this.encoder = passholder["encoder"].trim() ?? 'N/A';
+>>>>>>> feat: Verifying a control number. (#4)
   }
 }
 

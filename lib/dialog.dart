@@ -72,7 +72,7 @@ class _DialogBoxState extends State<DialogBox> {
               )
             ),
             Positioned(
-              top: widget.isVerified ? 40 : 20,
+              top: widget.isVerified ? 40 : heigth / 11,
               left: 50,
               right: 50,
               child: Column(
@@ -92,14 +92,6 @@ class _DialogBoxState extends State<DialogBox> {
                       color: widget.isVerified ? Colors.green : Colors.red,
                       fontSize: heigth / 36,
                       fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  widget.isVerified ? Container() : SizedBox(height: 5,),
-                  widget.isVerified ? Container() : Text( '*Something is wrong with the control number.',
-                    style: TextStyle(
-                      fontSize: heigth / 36,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black54
                     ),
                   ),
                 ],
